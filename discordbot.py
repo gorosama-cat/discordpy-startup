@@ -16,6 +16,9 @@ async def on_command_error(ctx, error):
 async def peng(ctx):
     await ctx.send('pong')
 
+@bot.command()
+async def hello(ctx):
+    await ctx.send('Hello world!')
 
 token = getenv('DISCORD_BOT_TOKEN')
 bot.run(token)
